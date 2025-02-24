@@ -51,6 +51,14 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+.Images {
+  width: 100%;
+}
+.Layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+}
 
 @media screen and (max-width: 520px) {
   header,
@@ -72,15 +80,36 @@ footer {
     align-content: center;
     justify-content: center;
   }
+  .Layout {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1px;
+    align-content: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .Layout {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 1px;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 .hover:hover {
-  animation: bigger;
-  animation-duration: 1s;
+  animation: bigger 0.4s ease-out forwards;
 }
 
 @keyframes bigger {
-  75% {
-    transform: scale(1.2);
+  30% {
+    transform: scale(1.1) rotate(2deg);
+  }
+  60% {
+    transform: scale(1.15) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1.2) rotate(0deg);
   }
 }
