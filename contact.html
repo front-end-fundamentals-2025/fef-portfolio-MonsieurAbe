@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src=Javascript/main.js defer></script>
   </head>
   <body>
     <header>
@@ -24,8 +25,13 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>email, number, linkedin</h1>
+    <main class="contactContainer">
+      <h1 id="contactme">Contact me</h1>
+      <div class="contactContainer contactForm">
+      <input type="text" placeholder="Email" id="input" />
+      <textarea type="text" placeholder="MESSAGE" id="input2" ></textarea>
+      <button id="button">Submit</button>
+    </div>
     </main>
     <footer>
       <p>Written by Abe</p>

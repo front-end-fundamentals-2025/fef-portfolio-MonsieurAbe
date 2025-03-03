@@ -60,6 +60,23 @@ footer {
   gap: 1px;
 }
 
+#input,
+#input2 {
+  width: 50%;
+}
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.contactForm {
+  width: 100%;
+  row-gap: 5px;
+}
+button {
+  width: 20%;
+}
+
 @media screen and (max-width: 520px) {
   header,
   ul {
